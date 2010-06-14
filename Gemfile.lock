@@ -14,14 +14,14 @@ dependencies:
     version: = 1.1.6
     require: 
     - pacecar
+  rails: 
+    group: 
+    - :default
+    version: = 3.0.0.beta4
   gravtastic: 
     group: 
     - :default
     version: = 2.1.3
-  rails: 
-    group: 
-    - :default
-    version: = 2.3.5
   pg: 
     group: 
     - :default
@@ -29,15 +29,27 @@ dependencies:
   treetop: 
     group: 
     - :test
-    version: = 1.4.3
+    version: = 1.4.5
+  high_voltage: 
+    group: 
+    - :default
+    version: = 0.9.0
   shoulda: 
     group: 
     - :test
-    version: = 2.10.2
+    version: = 2.11.0
+  delayed_job: 
+    group: 
+    - :default
+    version: = 2.0.3
   rack: 
     group: 
     - :default
-    version: = 1.0.1
+    version: = 1.1.0
+  cucumber-rails: 
+    group: 
+    - :test
+    version: = 0.3.2
   sinatra: 
     group: 
     - :default
@@ -56,10 +68,6 @@ dependencies:
     group: 
     - :default
     version: = 2.3.11
-  factory_girl: 
-    group: 
-    - :test
-    version: = 1.2.3
   webrat: 
     group: 
     - :test
@@ -83,17 +91,13 @@ dependencies:
   rack-test: 
     group: 
     - :test
-    version: = 0.5.0
+    version: = 0.5.4
     require: 
     - rack/test
-  cucumber: 
-    group: 
-    - :test
-    version: = 0.3.101
   clearance: 
     group: 
     - :default
-    version: = 0.8.2
+    version: = 0.9.0.rc1
   hoptoad_notifier: 
     group: 
     - :default
@@ -116,6 +120,10 @@ dependencies:
     group: 
     - :default
     version: = 1.0.12
+  factory_girl_rails: 
+    group: 
+    - :test
+    version: = 1.0
   nokogiri: 
     group: 
     - :test
@@ -123,50 +131,92 @@ dependencies:
 specs: 
 - rake: 
     version: 0.8.7
+- abstract: 
+    version: 1.0.0
 - activesupport: 
-    version: 2.3.5
-- rack: 
-    version: 1.0.1
-- actionpack: 
-    version: 2.3.5
-- actionmailer: 
-    version: 2.3.5
-- activerecord: 
-    version: 2.3.5
-- activeresource: 
-    version: 2.3.5
-- addressable: 
-    version: 2.1.2
+    version: 3.0.0.beta4
 - builder: 
     version: 2.1.2
+- i18n: 
+    version: 0.4.1
+- activemodel: 
+    version: 3.0.0.beta4
+- erubis: 
+    version: 2.6.5
+- rack: 
+    version: 1.1.0
+- rack-mount: 
+    version: 0.6.4
+- rack-test: 
+    version: 0.5.4
+- tzinfo: 
+    version: 0.3.22
+- actionpack: 
+    version: 3.0.0.beta4
 - mime-types: 
     version: "1.16"
+- polyglot: 
+    version: 0.3.1
+- treetop: 
+    version: 1.4.5
+- mail: 
+    version: 2.2.4
+- actionmailer: 
+    version: 3.0.0.beta4
+- arel: 
+    version: 0.4.0
+- activerecord: 
+    version: 3.0.0.beta4
+- activeresource: 
+    version: 3.0.0.beta4
+- addressable: 
+    version: 2.1.2
 - xml-simple: 
     version: 1.0.12
 - aws-s3: 
     version: 0.6.2
+- bundler: 
+    version: 0.9.26
+- thor: 
+    version: 0.13.6
+- railties: 
+    version: 3.0.0.beta4
+- rails: 
+    version: 3.0.0.beta4
 - clearance: 
-    version: 0.8.2
+    version: 0.9.0.rc1
 - diff-lcs: 
     version: 1.1.2
-- polyglot: 
-    version: 0.3.1
+- trollop: 
+    version: 1.16.2
+- gherkin: 
+    version: 1.0.30
+- json_pure: 
+    version: 1.4.3
 - term-ansicolor: 
     version: 1.0.5
-- treetop: 
-    version: 1.4.3
 - cucumber: 
-    version: 0.3.101
+    version: 0.8.0
+- cucumber-rails: 
+    version: 0.3.2
+- daemons: 
+    version: 1.0.10
 - ddollar-pacecar: 
     version: 1.1.6
+- delayed_job: 
+    version: 2.0.3
 - factory_girl: 
-    version: 1.2.3
+    version: 1.3.0
+- factory_girl_rails: 
+    version: "1.0"
 - fakeweb: 
     version: 1.2.6
 - gchartrb: 
     version: "0.8"
 - gravtastic: 
     version: 2.1.3
+- high_voltage: 
+    version: 0.9.0
 - hoptoad_notifier: 
     version: 2.2.0
 - json: 
@@ -177,10 +227,6 @@ specs:
     version: 0.8.0
 - rack-maintenance: 
     version: 0.3.0
-- rack-test: 
-    version: 0.5.0
-- rails: 
-    version: 2.3.5
 - redgreen: 
     version: 1.2.2
 - redis: 
@@ -190,7 +236,7 @@ specs:
 - rr: 
     version: 0.10.11
 - shoulda: 
-    version: 2.10.2
+    version: 2.11.0
 - sinatra: 
     version: 0.9.4
 - webmock: 
@@ -199,7 +245,7 @@ specs:
     version: 0.5.3
 - will_paginate: 
     version: 2.3.11
-hash: cc9d567f8d3740ec74d4db73def756302a58bf1d
+hash: 12faa5bad010c63e3a5405714c0932b787873bbd
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
