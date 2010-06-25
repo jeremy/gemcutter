@@ -31,7 +31,7 @@ dependencies:
   shoulda: 
     group: 
     - :test
-    version: = 2.11.0
+    version: = 2.11.1
   delayed_job: 
     group: 
     - :default
@@ -198,7 +198,7 @@ specs:
 - delayed_job: 
     version: 2.0.3
 - factory_girl: 
-    version: 1.3.0
+    version: 1.3.1
 - factory_girl_rails: 
     version: "1.0"
 - fakeweb: 
@@ -228,7 +228,7 @@ specs:
 - rr: 
     version: 0.10.11
 - shoulda: 
-    version: 2.11.0
+    version: 2.11.1
 - sinatra: 
     version: 0.9.4
 - webmock: 
@@ -237,7 +237,7 @@ specs:
     version: 0.5.3
 - will_paginate: 
     version: 2.3.11
-hash: cc9be74db9e382cc4dc0f789d20e27ad266e56f0
+hash: f363720709c6f8c2508e29e449a7b59d92ff1483
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
